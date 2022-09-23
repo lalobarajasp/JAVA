@@ -3,8 +3,7 @@ package com.generation;
 import java.util.ArrayList;
 import java.util.List;
 
-public class Student
-{
+public class Student {
     String name;
 
     String id;
@@ -48,7 +47,7 @@ public class Student
 
     public int totalEnrolledCourses(){
         //TODO implement
-        return 0;
+        return enrolledCourses.size();
     }
 
     public List<Course> getEnrolledCourses()
@@ -62,4 +61,6 @@ public class Student
         return "Student{" + "name='" + name + '\'' + ", id='" + id + '\'' + ", enrolledCourses=" + enrolledCourses
             + '}';
     }
+    
+   
 }

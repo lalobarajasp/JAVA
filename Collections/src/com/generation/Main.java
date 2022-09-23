@@ -1,7 +1,6 @@
 package com.generation;
 
-public class Main
-{
+public class Main {
     public static void main( String[] args )
     {
         CourseService courseService = new CourseService();
@@ -12,6 +11,7 @@ public class Main
         courseService.displayStudentInformation( studentId);
 
         courseService.enrollStudent( studentId, courseId );
+        //courseService.enrollStudent( studentId, "art_01" );
         courseService.displayStudentInformation( studentId);
 
         courseService.unEnrollStudent( studentId, courseId );

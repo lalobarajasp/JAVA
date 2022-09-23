@@ -2,11 +2,10 @@ package com.generation;
 
 import java.util.HashMap;
 
-public class CourseService
-{
-    HashMap<String, Student> students = new HashMap<>();
+public class CourseService {
+    HashMap<String, Student> students = new HashMap<>();//lista fija
 
-    HashMap<String, Course> courses = new HashMap<>();
+    HashMap<String, Course> courses = new HashMap<>();//lista fija
 
 
     public CourseService()
@@ -27,19 +26,33 @@ public class CourseService
 
     public void enrollStudent(String studentId, String courseId){
         //TODO implement so it adds the given course form the student
+    	//System.out.println(courses.get(studentId).toString());
+    	Student s = students.get(studentId);
+    	Course c = courses.get(courseId);
+    	s.enroll(c);
     }
 
     public void unEnrollStudent(String studentId, String courseId){
         //TODO implement so it removes the given course form the student
+    	Student s = students.get(studentId);
+    	Course c = courses.get(courseId);
+    	s.unEnroll(c);
     }
 
     public void displayCourseInformation(String courseId){
         //TODO implement so it shows the course name, id and credits
+    	Course c = courses.get(courseId);
+    	System.out.println(c.toString());
     }
 
     public void displayStudentInformation(String studentId){
         //TODO implement so it shows the student name, id and list of enrolled courses
+    	Student s = students.get(studentId);
+    	System.out.println(s);
     }
-
+    
+    
+  
+    
 
 }

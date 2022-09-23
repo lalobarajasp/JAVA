@@ -1,7 +1,6 @@
 package com.generation;
 
-public class Course
-{
+public class Course{
 
     String name;
 
@@ -22,3 +21,4 @@ public class Course
         return "Course{" + "name='" + name + '\'' + ", id='" + id + '\'' + ", credits=" + credits + '}';
     }
 }
+
